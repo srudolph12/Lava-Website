@@ -1,0 +1,117 @@
+.connect-toggle {
+    display: none;
+}
+
+.connect-button {
+    float: right;
+    padding: 5px 30px; 
+    font-size: 13px;
+    font-family: sans-serif; 
+    cursor: pointer;
+    border: 1px solid #D1D1D1;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+
+
+}
+
+.connect-toggle:checked + .connect-button {
+    background-color: #e0ffdb;
+    color: #3F593B;
+}
+
+.connect-toggle:checked + .connect-button:before {
+    content: 'Connected';
+}
+
+.connect-button:before {
+    content: 'Connect';
+}
+
+
+.connect-toggle1 {
+    display: none;
+}
+.connect-toggle1:checked + .connect-button {
+    background-color: #e0ffdb;
+    color: #3F593B;
+}
+
+.connect-toggle1:checked + .connect-button:before {
+    content: 'Connected';
+}
+
+.connect-toggle2 {
+    display: none;
+}
+.connect-toggle2:checked + .connect-button {
+    background-color: #e0ffdb;
+    color: #3F593B;
+}
+
+.connect-toggle2:checked + .connect-button:before {
+    content: 'Connected';
+}
+
+.connect-toggle3 {
+    display: none;
+}
+.connect-toggle3:checked + .connect-button {
+    background-color: #e0ffdb;
+    color: #3F593B;
+}
+
+.connect-toggle3:checked + .connect-button:before {
+    content: 'Connected';
+}
+
+.connect-toggle4 {
+    display: none;
+}
+.connect-toggle4:checked + .connect-button {
+    background-color: #e0ffdb;
+    color: #3F593B;
+}
+
+.connect-toggle4:checked + .connect-button:before {
+    content: 'Connected';
+}
+
+.connect-toggle5 {
+    display: none;
+}
+.connect-toggle5:checked + .connect-button {
+    background-color: #e0ffdb;
+    color: #3F593B;
+}
+
+.connect-toggle5:checked + .connect-button:before {
+    content: 'Connected';
+}
+
+.connect-toggle6 {
+    display: none;
+}
+.connect-toggle6:checked + .connect-button {
+    background-color: #e0ffdb;
+    color: #3F593B;
+}
+
+.connect-toggle6:checked + .connect-button:before {
+    content: 'Connected';
+}
+
+
+.connect-toggle7 {
+    display: none;
+}
+.connect-toggle7:checked + .connect-button {
+    background-color: #e0ffdb;
+    color: #3F593B;
+}
+
+.connect-toggle7:checked + .connect-button:before {
+    content: 'Connected';
+}

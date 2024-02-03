@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Sydney Rudolph lavaLab site</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="website.css" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+        background: radial-gradient(#D7BFED, white);
+    }
+    .headerPhoto {
+        width: 48px;
+        height: auto;
+        border-radius: 50%;
+        float: right;
+        margin-top: 25px;
+    }
+    h3 {
+        font-size: 30px;
+        color: #9730FF;
+        font-family: sans-serif;
+        margin: 0;
+        line-height: 100px;
+    }
+    #header {
+        height: 100px;
+        background-color: white;
+        width: 1350px;
+        margin: 0 auto;
+    }
+    .title{
+        font-size: 50px;
+        font-family: sans-serif; 
+        margin-top: 0px;
+        padding-top: 130px;
+        padding-left: 50px;
+
+    }
+    #bottom{
+        width: auto;
+        
+        
+    }
+    #content {
+        width: 1340px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+  
+
+    .figmaPhoto{
+        width: 17.8px;
+        height: 26.7px;
+
+    }
+    .classTitle{
+        font-size: 20px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        font-family: sans-serif; 
+    }
+    
+    .apps{
+        background-color: #FEF9F8;
+        border: 1px solid #D1D1D1;
+        padding: 25px;
+        width: 250px; 
+        border-radius: 5%;
+        margin: 15px;
+    }
+    .description {
+        margin-top: 3px;
+        font-family: sans-serif; 
+        font-size: 12px;
+    }
+
+    .back{
+        text-decoration: none; 
+        color: black;
+        font-size: 14px;
+        background-color: white; 
+        font-family: sans-serif; 
+        padding: 20px 30px; 
+        border: 1px solid black; 
+        border-radius: 10%; 
+        margin-right: 20px;
+        margin-top: 30px; 
+        display: inline-block;
+        transition: transform 0.3s;
+    }
+
+    .finish{
+        
+        text-decoration: none; 
+        color: white;
+        font-size: 14px;
+        background-color: black; 
+        font-family: sans-serif; 
+        padding: 20px 30px; 
+        border: 1px solid black; 
+        border-radius: 10%; 
+        margin: 100px 5px 35px 5px;
+        display: inline-block;
+        transition: transform 0.3s;
+    }
+    #buttons {
+        padding-top: 10px; /* Adjust the value to move the buttons higher up */
+        padding-left: 55px;
+        padding-bottom: 50px;
+
+    }
+    .back:hover, .finish:hover, .headerPhoto:hover {
+        transform: scale(1.15);
+    }
+
+    #profile-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            border-radius: 10%; 
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+
+        #profile-popup {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        #profile-close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            color: #000;
+            font-size: 20px;
+        }
+
+
+    
+</style>
+
+<body>
+    <div id="header">
+        <img class="headerPhoto" src="img/ai_photo.jpeg" alt="ai photo">
+        <h3>hive</h3>
+    </div>
+    <div id="bottom">
+        <p class="title">Connect your favorite tools.</p>
+        <div id="content">
+            <div class="apps">
+                <input type="checkbox" id="connect-toggle" class="connect-toggle">
+                <label for="connect-toggle" class="connect-button"></label>
+
+                <img class="figmaPhoto" src="img/figma.png" alt="figma logo">
+                <p class="classTitle">Figma</p>
+                <p class="description">Stay up to date with your team's latest designs.</p>
+
+            </div>
+
+            <div class="apps">
+                <input type="checkbox" id="connect-toggle1" class="connect-toggle1">
+                <label for="connect-toggle1" class="connect-button"></label>
+
+                <img class="figmaPhoto" src="img/google drive2.png" alt="figma logo">
+                <p class="classTitle">Google Drive</p>
+                <p class="description">Access all of your documents and information</p>
+
+            </div>
+
+            <div class="apps">
+                <input type="checkbox" id="connect-toggle2" class="connect-toggle2">
+                <label for="connect-toggle2" class="connect-button"></label>
+
+                <img class="figmaPhoto" src="img/slack.png" alt="figma logo">
+                <p class="classTitle">Slack</p>
+                <p class="description">Communicate seamlessly with your teammates.</p>
+
+            </div>
+
+            <div class="apps">
+                <input type="checkbox" id="connect-toggle3" class="connect-toggle3">
+                <label for="connect-toggle3" class="connect-button"></label>
+
+                <img class="figmaPhoto" src="img/notion.png" alt="figma logo">
+                <p class="classTitle">Notion</p>
+                <p class="description">Sync all of your notes, team docs, and other important information.</p>
+
+            </div>
+
+            <div class="apps">
+                <input type="checkbox" id="connect-toggle4" class="connect-toggle4">
+                <label for="connect-toggle4" class="connect-button"></label>
+
+                <img class="figmaPhoto" src="img/miro.png" alt="figma logo">
+                <p class="classTitle">Miro</p>
+                <p class="description">Unlock the power of collaboration to distill insights form data.</p>
+
+            </div>
+
+            <div class="apps">
+                <input type="checkbox" id="connect-toggle5" class="connect-toggle5">
+                <label for="connect-toggle5" class="connect-button"></label>
+
+                <img class="figmaPhoto" src="img/airtable.png" alt="figma logo">
+                <p class="classTitle">Airtable</p>
+                <p class="description">Keep your data organized in a spreadsheet-database format.</p>
+
+            </div>
+
+            <div class="apps">
+                <input type="checkbox" id="connect-toggle6" class="connect-toggle6">
+                <label for="connect-toggle6" class="connect-button"></label>
+
+                <img class="figmaPhoto" src="img/confluence.png" alt="figma logo">
+                <p class="classTitle">Confluence</p>
+                <p class="description">Create content, collaborate on work, and organize and share information</p>
+
+            </div>
+
+            <div class="apps">
+                <input type="checkbox" id="connect-toggle7" class="connect-toggle7">
+                <label for="connect-toggle7" class="connect-button"></label>
+
+                <img class="figmaPhoto" src="img/Dovetail.png" alt="figma logo">
+                <p class="classTitle">Dovetail</p>
+                <p class="description">Organize and tag your research in a collaborative platform.</p>
+
+            </div>
+
+
+        <div id="buttons">
+            
+            <a class="back" href="website.html">Back</a>
+            <a class="finish" href="finished.html">Finish</a>
+        </div>
+
+    <!-- Profile Pop-up -->
+    <div id="profile-overlay">
+        <div id="profile-popup">
+            <span id="profile-close-btn">&times;</span>
+            <p>This is your profile!.</p>
+        </div>
+    </div>
+      
+
+    </div>
+
+    <script>
+        document.querySelector('.headerPhoto').addEventListener('click', function() {
+        document.getElementById('profile-overlay').style.display = 'flex';
+    });
+
+    document.getElementById('profile-close-btn').addEventListener('click', function() {
+        document.getElementById('profile-overlay').style.display = 'none';
+    });
+    </script>
+    
+
+
+
+</body>
+</html>
